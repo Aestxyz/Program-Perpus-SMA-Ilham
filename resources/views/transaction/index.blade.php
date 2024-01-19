@@ -7,7 +7,7 @@
             <div class="col-12 col-md-6">
                 <div class="card-body">
                     <h4 class="card-title display-6 mb-4 text-truncate lh-sm">Hello {{ Auth()->user()->name }}!🎉</h4>
-                    <p class="mb-0">Saat ini ada {{ $completed->count() }} transaksi peminjaman buku telah selesai.</p>
+                    <p class="mb-0">Saat ini ada {{ $completed->count() }} transaksi peminjaman buku.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 position-relative text-center">
@@ -19,7 +19,7 @@
 
     <div class="card">
         <h5 class="card-header">
-            Peminjaman selesai
+            Pengembalian Buku
         </h5>
         <div class="card-body">
             <div class="table-responsive">

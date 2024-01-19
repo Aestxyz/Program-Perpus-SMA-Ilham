@@ -1,25 +1,11 @@
 TO DO LIST :
-pak imam :
--pindah tombol selesai, bayar denda dan hubungi ke pengembalian buku
--tambahkan pesan peringatan pada selesai, bayar dan hubungi pada aksi transaksi pengembalian
--tampilkan kode peminjaman pada konfirmasi booking (mirip seperti lihat detail di denda)
--kepala cukup mengelola data petugas dan mengelola laporan ✅
--hilangkan mengelola petugas pada aktor petugas (kelola my profile tetap ada untuk petugas) ✅
-
-buk eris :
--tombol perpanjang dihapus, kembalikan tombol hubungi ✅
--form tambah peminjaman mencari nama anggota dan buku bisa di search ketik ✅
--konfirmasi booking buku di buat seperti konfirmasi akun, hapus dan edit dihilangkan ✅
--tombol hapus dan edit di halaman pemijaman dibuat diluar tombol halaman "lihat" ✅
--menu denda ubah jadi laporan denda ✅
--tambahkan logo sekolah pada program (minimal didalam cetak laporan) ✅
--pada laporan tambahkan logo sekolah, alamat sekolah dan pada bagian bawah tambahkan penanggung jawab(kepala perpustakaan) ✅
--bug lihat detail user di halaman peminjaman ada 2 ✅
--bug akun belum dikonfirmasi tapi muncul ditambah peminjaman ✅
--bug lihat detail petugas dan kepala ada jurusan dan status anggota ✅
--bug tombol batal di hapus buku tidak berfungsi
--bug pada cetak laporan anggota terpotong
--bug pada cetak laporan buku kolom gambar kosong
+- Tambahkan kepala perpustakaan bisa login sekaligus merangkap admin
+- Petugas perpustakaan tidak bisa mengelola data kepala
+- Kepala perpustakaan mengelola data petugas dan tidak ada fitur hapus
+- Tambah data petugas di bedain dgn anggota
+- Di halaman utama harus ada tampil informasi,
+- Transaksi perpustakaan dalam nya ada peminjaman dan pengembalian pakai sub bab jgn di satuin
+- Kode booking di ganti dengan ACC peminjaman sama kek kontrak mata kuliah
 
 yg buk eris ni cmn bnyk perbaikan bug be bg
 dk ush lh dibuat sub menu transaksi tu bg klo ribet buatnyo, kaya gitu be lah tpi menu pengembalian dk usah make sub menu, klo diklik lngsung mnculin halaman, alasan aku plingan gek notifny nyampur bu
@@ -41,5 +27,28 @@ SOLVED :
 - dibagian laporan peminjaman dan pengembalian tidak perlu kode peminjaman cukup dan tambahkan data jurusan sesudah nama pada laporan transaksi peminjaman dan pengembalian
 - tambahkan modal untuk setiap hapus data (peringatan)
 - laporan anggota, buku, transaksi, pada bagian atas laporan ditambahkan logo sekolah dan alamat pada bagian cop surat dan dibawah pojok kanan ditambah penanggung jawab kepala perpustakaan
+- kepala cukup mengelola data petugas dan mengelola laporan
+- hilangkan mengelola petugas pada aktor petugas (kelola my profile tetap ada untuk petugas)
+- tombol perpanjang dihapus, kembalikan tombol hubungi
+- form tambah peminjaman mencari nama anggota dan buku bisa di search ketik
+- konfirmasi booking buku di buat seperti konfirmasi akun, hapus dan edit dihilangkan
+- tombol hapus dan edit di halaman pemijaman dibuat diluar tombol halaman "lihat"
+- menu denda ubah jadi laporan denda
+- tambahkan logo sekolah pada program (minimal didalam cetak laporan)
+- pada laporan tambahkan logo sekolah, alamat sekolah dan pada bagian bawah tambahkan penanggung jawab(kepala perpustakaan)
+- bug lihat detail user di halaman peminjaman ada 2
+- bug akun belum dikonfirmasi tapi muncul ditambah peminjaman
+- bug lihat detail petugas dan kepala ada jurusan dan status anggota
+- pindah tombol selesai, bayar denda dan hubungi ke pengembalian buku
+-tambahkan pesan peringatan pada selesai, bayar dan hubungi pada aksi transaksi pengembalian
+- bug tombol batal di hapus buku tidak berfungsi
+- bug pada cetak laporan anggota terpotong
+- bug pada cetak laporan buku kolom gambar kosong
+- Tombol hapus harus ada pesan yakin ingin menghapus data ini, klik Tombol oke atau batal
+- Kata2 yg support by di ganti dengan perpustakaan dan nama sekolah SMAN 8 Batang Hari
+
+
+
+
 
 

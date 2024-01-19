@@ -1,43 +1,74 @@
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light py-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img class="img-fluid" src="/image/logo.png" alt="" width="48px" height="48px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc"
-                aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container position-relative py-lg-4">
+
+            <!-- Mobile Logo -->
+            <a editable="inline" class="navbar-brand text-white d-lg-none" href="/">
+                <img src="/image/logo.png" width="48" height="48" class="align-middle me-1" alt="My Website">
+                Perpustakaan</a>
+            <!-- end -->
+
+            <!-- Desktop Logo -->
+            <div class="lc-block position-absolute start-50 translate-middle top-50 d-none d-lg-block">
+                <a editable="inline" class="navbar-brand text-white mx-auto" href="/">
+                    <img src="/image/logo.png" width="48" height="48" class="d-block mx-auto" alt="My Website">
+                    SMAN 8 Batang Hari</a>
+            </div>
+            <!-- end -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar5"
+                aria-controls="myNavbar5" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nav_lc">
-                <ul
-                    class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle">
-                    <li class="nav-item me-4"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="{{ route('catalog.index') }}">Katalog Buku</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
-                    <li class="nav-item me-4"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="{{ route('catalog.index') }}">Katalog Buku</a>
-                    </li>
-                </ul>
-                <div class="ms-lg-auto">
-                    @auth
-                        @if (auth()->user()->role == 'Anggota')
-                            <a class="btn btn-outline-primary btn-sm" href="{{ route('catalog.history') }}">Riwayat</a>
-                            <a class="btn btn-outline-danger btn-sm" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                          document.getElementById('logout-form').submit();">Logout</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        @else
-                            <a class="btn btn-outline-primary btn-sm" href="/home">Dashboard</a>
-                        @endif
-                    @else
-                        <a class="btn btn-outline-primary btn-sm" href="/login">Login</a>
-                        <a class="btn btn-primary btn-sm" href="/register">Register</a>
-                    @endauth
+
+            <div class="lc-block collapse navbar-collapse" id="myNavbar5">
+                <div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu -->
+                    <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a
+                                href="/" class="nav-link ">Beranda</a>
+                        </li>
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738">
+                            <a href="{{ route('catalog.index') }}" class="nav-link ">Koleksi Buku</a>
+                        </li>
+                    </ul> <!-- /lc_nav_menu -->
                 </div>
+
+                <div lc-helper="shortcode" class="live-shortcode ms-auto"> <!--  lc_nav_menu -->
+                    <ul id="menu-secondary" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+                        @auth
+                            @if (Auth()->user()->role == 'Anggota')
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
+                                    <a href="{{ route('catalog.history') }}" class="nav-link ">Transaksi</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
+                                    <a href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();"
+                                        class="nav-link ">Logout</a>
+                                </li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            @else
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
+                                    <a href="/home" class="nav-link ">Dashboard</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
+                                <a href="/login" class="nav-link ">Masuk</a>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
+                                <a href="/register" class="nav-link ">Daftar</a>
+                            </li>
+                        @endauth
+                    </ul> <!-- /lc_nav_menu -->
+                </div>
+
             </div>
         </div>
     </nav>

@@ -30,9 +30,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome', [
-        'book' => Book::count(),
-        'transaction' => Transaction::count(),
-        'user' => User::whereNotNull('email_verified_at')->count(),
+        'books' => Book::inRandomOrder()->limit(9)->get(),
     ]);
 });
 

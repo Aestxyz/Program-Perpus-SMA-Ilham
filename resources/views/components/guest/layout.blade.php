@@ -48,7 +48,7 @@
 
 </head>
 
-<body class="bg-white">
+<body>
     @include('layouts.payment_date')
 
     <x-guest.navbar></x-guest.navbar>
@@ -87,51 +87,16 @@
     </div>
     {{ $slot }}
 
-    <footer class="landing-footer bg-body footer-text">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row gx-0 gy-4 g-md-5 justify-content-between">
-                    <div class="col-lg-5">
-                        <a href="landing-page.html" class="app-brand-link mb-4">
-                            <span class="app-brand-logo demo">
-                                <img src="/image/logo.png" width="48px" height="48px" alt="">
-                            </span>
-                            <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">SMK - PP Negeri Jambi</span>
-                        </a>
-                        <p class="footer-text footer-logo-description mb-4">
-                            SMK - PP Negeri Jambi adalah sebuah Sekolah Menengah Kejuruan yang berlokasi di Jambi, Indonesia. Dikenal sebagai lembaga pendidikan yang berkomitmen tinggi terhadap pengembangan keterampilan siswa, SMK - PP Negeri Jambi menawarkan program pendidikan yang berfokus pada kejuruan dan persiapan karir.
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 text-end">
-                        <h6 class="footer-title mb-4">HALAMAN</h6>
-                        <ul class="list-unstyled">
-                            <li class="mb-3">
-                                <a href="/login" class="footer-link">Login</a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="/register" class="footer-link">Register</a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="/" class="footer-link">Home</a>
-                            </li>
-                            <li class="mb-3">
-                                <a href="/catalog-books" class="footer-link">Catalog</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <footer class="text-center">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2020 Copyright:
+                <a class=" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
-        </div>
-        <div class="footer-bottom py-3">
-            <div
-                class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
-                <div class="mb-2 mb-md-0">
-                    <span class="footer-text"> Made with ❤️ for SMK - PP NNegeri Jambi</span>
-                </div>
-
-            </div>
-        </div>
-    </footer>
+            <!-- Copyright -->
+        </footer>
+    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

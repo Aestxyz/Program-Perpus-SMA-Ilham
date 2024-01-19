@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>{{ $title ?? 'Sistem Informasi Perpustakaan' }}</title>
+    <title>{{ $title ?? 'SMAN 8 Batang Hari' }}</title>
 
     <meta name="description" content="" />
 
@@ -59,7 +59,8 @@
                 <div class="app-brand demo">
                     <a href="/home" class="app-brand-link">
                         <img class="img-fluid" src="/image/logo.png" alt="" width="40px" height="40px">
-                        <span class="app-brand-text demo menu-text fw-semibold ms-2">Perpustakaan</span>
+                        <span class="demo menu-text fw-semibold ms-2">SMAN 8 <br>
+                            Batang Hari</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -85,7 +86,7 @@
                         </a>
                     </div>
 
-                    <div class="navbar-nav-right d-flex align-items-center bg-white rounded-3 shadow px-1 py-2"
+                    <div class="navbar-nav-right d-flex align-items-center bg-body rounded-3 shadow px-1 py-2"
                         id="navbar-collapse">
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -188,16 +189,16 @@
                     <!-- / Content -->
 
                     <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
+                    <footer class="content-footer footer bg-footer-theme ">
                         <div class="container-xxl">
                             <div
-                                class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
+                                class="footer-container d-flex align-items-center justify-content-center py-3 flex-md-row flex-column">
                                 <div class="text-body mb-2 mb-md-0">
                                     ©
                                     <script>
                                         document.write(new Date().getFullYear());
                                     </script>
-                                    , Made with ❤️ for SMK - PP NNegeri Jambi
+                                    , Made with ❤️ for SMAN 8 Batang Hari
                                 </div>
                             </div>
                         </div>

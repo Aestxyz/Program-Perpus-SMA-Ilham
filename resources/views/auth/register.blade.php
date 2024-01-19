@@ -34,11 +34,12 @@
                             <img class="img-fluid" src="/image/logo.png" alt="" width="60px" height="60px">
                         </a>
                     </div>
+                    <p class="text-center fw-bold">SMAN 8 Batang Hari</p>
                     <!-- /Logo -->
                     <div class="card-body mt-2">
-                        <h4 class="mb-2">Jadi Anggota Sekarang 🚀</h4>
-                        <p class="mb-4">Daftar akun perpustakaan sekarang
-                            dan mulailah petualangan literasi Anda.</p>
+                        <h4 class="mb-2">Bergabunglah sebagai anggota sekarang 😎</h4>
+                        <p class="mb-4">
+                            Daftarlah untuk akun perpustakaan sekarang dan mulailah petualangan literasi Anda.</p>
 
                         <form id="formAuthentication" class="mb-3" action="{{ route('register') }}" method="POST">
                             @csrf
@@ -207,6 +208,8 @@
                             <a href="/login">
                                 <span>Masuk Sekarang</span>
                             </a>
+                            <br>
+                            <a href="/" class="text-center">Kembali Beranda</a>
                         </p>
                     </div>
                 </div>

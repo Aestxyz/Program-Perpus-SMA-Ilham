@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
+use App\Models\Penalty;
+use App\Models\Transaction;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +27,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $onTransactions = Transaction::where('status', 'Berjalan')->count();
+        $books = Book::count();
+        $members = User::where('role', 'Anggota')
+            ->whereNotNull('email_verified_at')
+            ->count();
+
+        $penalties = Penalty::get();
+        $total = 0;
+
+        foreach ($penalties as $penalty) {
+            $total += $penalty->amount;
+        }
+
+        $transactions = Transaction::get();
+        return view('home', compact(
+            'onTransactions',
+            'books',
+            'members',
+            'total',
+            'transactions'
+        ));
     }
 }

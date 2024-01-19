@@ -22,10 +22,10 @@
                             <img class="img-fluid" src="/image/logo.png" alt="" width="60px" height="60px">
                         </a>
                     </div>
+                    <p class="text-center fw-bold">SMAN 8 Batang Hari</p>
                     <!-- /Logo -->
 
                     <div class="card-body mt-2">
-                        <a href="/" class="text-center">Home</a>
                         <h4 class="mb-2">Selamat datang kembali! 👋</h4>
                         <p class="mb-4">Silakan masuk ke akun perpustakaan Anda untuk mengakses koleksi buku yang
                             menarik.</p>
@@ -81,6 +81,8 @@
                             <a href="/register">
                                 <span>Buat akun baru</span>
                             </a>
+                            <br>
+                            <a href="/" class="text-center">Kembali Beranda</a>
                         </p>
                     </div>
                 </div>
