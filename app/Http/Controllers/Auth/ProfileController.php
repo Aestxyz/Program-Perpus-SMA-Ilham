@@ -22,7 +22,7 @@ class ProfileController extends Controller
             'email' => ['required', 'string', 'email', 'max:50', 'unique:users,email, ' . $id],
             'identify' => ['required', 'numeric', 'digits_between:8,30', 'unique:users,identify, ' . $id],
             'gender'  => ['required', 'in:Laki-laki,Perempuan'],
-            'telp' => ['required', 'numeric', 'digits_between:10,11'],
+            'telp' => ['required', 'numeric', 'digits_between:9,10'],
             'birthdate' => ['required', 'date'],
         ]);
 

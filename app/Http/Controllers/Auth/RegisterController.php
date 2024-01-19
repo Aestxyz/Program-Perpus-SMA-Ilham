@@ -57,7 +57,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'identify' => ['required', 'numeric', 'digits_between:8,30', 'unique:users,identify'],
             'gender'  => ['required', 'in:Laki-laki,Perempuan'],
-            'telp' => ['required', 'numeric', 'digits_between:10,11'],
+            'telp' => ['required', 'numeric', 'digits_between:9,10'],
             'role' => ['required', 'in:Anggota'],
             'birthdate' => ['required', 'date'],
             'majors' => ['nullable', 'string'],

@@ -92,7 +92,7 @@
             <!-- Copyright -->
             <div class="text-center p-3">
                 © 2020 Copyright:
-                <a class=" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                <a class=" href="https://SMAN 8 Batang Hari/">SMAN 8 Batang Hari</a>
             </div>
             <!-- Copyright -->
         </footer>
