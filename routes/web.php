@@ -10,7 +10,6 @@ use App\Http\Controllers\Officer\PenaltyController;
 use App\Http\Controllers\Officer\ReportController;
 use App\Http\Controllers\Officer\TransactionController;
 use App\Http\Controllers\CatalogController;
-use App\Http\Controllers\Officer\BookshelfController;
 use App\Models\Book;
 use App\Models\Transaction;
 use App\Models\User;
@@ -71,13 +70,6 @@ Route::middleware(['auth', 'role:Petugas,Kepala'])->group(function () {
         Route::post('/', [CategoryController::class, 'store'])->name('categories.store');
         Route::put('/{id}', [CategoryController::class, 'update'])->name('categories.update');
         Route::delete('/{id}', [CategoryController::class, 'destroy'])->name('categories.destroy');
-    });
-
-    Route::prefix('bookshelves')->group(function () {
-        Route::get('/', [BookshelfController::class, 'index'])->name('bookshelves.index');
-        Route::post('/', [BookshelfController::class, 'store'])->name('bookshelves.store');
-        Route::put('/{bookshelf}', [BookshelfController::class, 'update'])->name('bookshelves.update');
-        Route::delete('/{bookshelf}', [BookshelfController::class, 'destroy'])->name('bookshelves.destroy');
     });
 
     Route::prefix('books')->group(function () {

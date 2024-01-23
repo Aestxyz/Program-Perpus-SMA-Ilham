@@ -8,10 +8,6 @@
                     <p class="mb-0">Selamat menjalankan tugas dan semoga harimu menyenangkan.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 position-relative text-center">
-                <img src="https://demos.themeselection.com/materio-bootstrap-html-admin-template/assets/img/illustrations/illustration-2.png"
-                    class="card-img-position bottom-0 w-25 end-0 scaleX-n1-rtl" alt="View Profile">
-            </div>
         </div>
     </div>
 

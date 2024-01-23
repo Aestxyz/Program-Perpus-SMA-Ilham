@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Officer;
 use App\Http\Controllers\Controller;
 use App\Models\Book;
 use App\Http\Requests\BookRequest;
-use App\Models\Bookshelf;
 use App\Models\Category;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Storage;
@@ -17,7 +16,6 @@ class BookController extends Controller
         return view('book.index', [
             'books' => Book::latest()->select('id', 'image', 'title', 'category_id')->get(),
             'categories' => Category::select('id', 'name')->get(),
-            'bookshelves' => Bookshelf::select('id', 'name')->get(),
             'transactions' => Transaction::where('status', 'Berjalan')
                 ->orWhere('status', 'Terlambat')
                 ->count()
@@ -40,8 +38,7 @@ class BookController extends Controller
         return view('book.show', [
             'book' => Book::findOrFail($id),
             'categories' => Category::select('id', 'name')->get(),
-            'bookshelves' => Bookshelf::select('id', 'name')->get(),
-        ]);
+            ]);
     }
 
     public function update(BookRequest $request, $id)

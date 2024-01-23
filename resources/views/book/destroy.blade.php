@@ -14,7 +14,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <h4 class="text-wrap">Yakin ingin menghapus data rak buku <span
+                <h4 class="text-wrap">Yakin ingin menghapus data buku <span
                         class="text-danger">{{ $book->title }}</span>?</h4>
                 <p class="text-wrap">Penghapusan data akan mempengaruhi data-data lainnya. Pastikan untuk
                     memikirkannya terlebih dahulu sebelum penghapusan data terjadi.</p>

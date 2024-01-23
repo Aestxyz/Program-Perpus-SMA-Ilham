@@ -9,7 +9,6 @@
                         <th>No.</th>
                         <th>Judul</th>
                         <th>Kategori</th>
-                        <th>Rak Buku</th>
                         <th>ISBN</th>
                         <th>Penulis</th>
                         <th>Tahun Publis</th>
@@ -23,7 +22,6 @@
                             <td>{{ ++$no }}.</td>
                             <td>{{ Str::limit($book->title, 30, '...') }}</td>
                             <td>{{ Str::limit($book->category->name, 20, '...') }}</td>
-                            <td>{{ $book->bookshelf->name }}</td>
                             <td>{{ $book->isbn }}</td>
                             <td>{{ Str::limit($book->author, 20, '...') }}</td>
                             <td>{{ $book->year_published }}</td>

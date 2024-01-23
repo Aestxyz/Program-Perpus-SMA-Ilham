@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Book;
-use App\Models\Bookshelf;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Http;
@@ -30,14 +29,12 @@ class APISeeder extends Seeder
                     // Check if the 'image' key exists in the $bookDetails array
                     if (isset($bookDetails['image'])) {
                         $category = Category::all()->random();
-                        $bookshelf = Bookshelf::all()->random();
                         $imageName = basename($bookDetails['image']);
 
                         $bookData = [
                             'title' => $bookDetails['title'],
                             'image' => 'images/' . $imageName,
                             'category_id' => $category->id,
-                            'bookshelf_id' => $bookshelf->id,
                             'isbn' => $bookDetails['id'],
                             'author' => $bookDetails['authors'],
                             'year_published' => $bookDetails['year'],

@@ -27,7 +27,6 @@ class BookRequest extends FormRequest
             'title' => 'required|max:255',
             'image' => 'nullable|image',
             'category_id' => 'required|exists:categories,id',
-            'bookshelf_id' => 'required|exists:bookshelves,id',
             'isbn' => 'required|numeric|digits_between:8,30',
             'author' => 'required|max:255',
             'year_published' => 'required|date_format:Y',

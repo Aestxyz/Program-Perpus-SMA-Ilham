@@ -45,11 +45,6 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="{{ route('bookshelves.index') }}" class="menu-link">
-                        <div data-i18n="Rak Buku">Rak Buku</div>
-                    </a>
-                </li>
-                <li class="menu-item">
                     <a href="{{ route('books.index') }}" class="menu-link">
                         <div data-i18n="Books">Buku</div>
                     </a>

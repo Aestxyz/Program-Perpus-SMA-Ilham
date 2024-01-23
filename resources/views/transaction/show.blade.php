@@ -102,10 +102,6 @@
                                 <span>{{ $transaction->book->category->name }}</span>
                             </li>
                             <li class="mb-3">
-                                <span class="fw-medium me-2">Rak Buku:</span>
-                                <span>{{ $transaction->book->bookshelf->name }}</span>
-                            </li>
-                            <li class="mb-3">
                                 <span class="fw-medium me-2">ISBN:</span>
                                 <span>+62{{ $transaction->book->isbn }}</span>
                             </li>

@@ -57,9 +57,6 @@
                                     <span class="fw-bold">Kategori Buku: </span> {{ $item->book->category->name }}
                                 </li>
                                 <li>
-                                    <span class="fw-bold">Rak Buku: </span> {{ $item->book->bookshelf->name }}
-                                </li>
-                                <li>
                                     <span class="fw-bold">ISBN: </span>
                                     {{ $item->book->isbn }}
                                 </li>

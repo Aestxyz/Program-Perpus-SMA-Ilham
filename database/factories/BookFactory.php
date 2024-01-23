@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Bookshelf;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Storage;
@@ -24,7 +23,6 @@ class BookFactory extends Factory
             'title' => $this->faker->sentence(),
             'image' => $storagePath,
             'category_id' => Category::all()->random(),
-            'bookshelf_id' => Bookshelf::all()->random(),
             'isbn' => $this->faker->unique()->isbn13(),
             'author' => $this->faker->name(),
             'year_published' => $this->faker->year(),

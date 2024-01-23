@@ -93,17 +93,6 @@
                         </div>
                         <div class="col-md">
                             <div class="mb-3">
-                                <label for="bookshelf_id" class="form-label">Rak Buku</label>
-                                <select class="form-select" name="bookshelf_id" id="bookshelf_id">
-                                    <option selected>Select one</option>
-                                    @foreach ($bookshelves as $bookshelf)
-                                        <option value="{{ $bookshelf->id }}">{{ $bookshelf->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="mb-3">
                                 <label for="book_count" class="form-label">Jumlah Buku</label>
                                 <input type="number" class="form-control" name="book_count" id="book_count"
                                     value="{{ old('book_count') }}" aria-describedby="helpId"
